@@ -614,6 +614,8 @@ a {
   background-color: var(--color-stone);
   border: 1px solid var(--color-smoke);
   overflow: hidden;
+  height: 100%;
+  width: 100%;
   transition: transform var(--transition-base), border-color var(--transition-base), box-shadow var(--transition-base);
 }
 .service-card:hover {
