@@ -1,0 +1,838 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Aurum – A fine-dining experience where modern European cuisine meets minimalist luxury. Reserve your table today." />
+  <title>Aurum | Fine Dining</title>
+
+  <!-- Bootstrap 5 CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" />
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" />
+  <!-- Google Fonts: Cormorant Garamond + DM Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ============================================================
+       NAVIGATION
+  ============================================================ -->
+  <nav id="mainNav" class="navbar navbar-expand-lg fixed-top" role="navigation" aria-label="Main navigation">
+    <div class="container">
+      <!-- Logo / Brand -->
+      <a class="navbar-brand aurum-brand" href="#hero" aria-label="Aurum – return to top">
+        <span class="brand-a">A</span><span class="brand-urum">URUM</span>
+      </a>
+
+      <!-- Mobile Toggle -->
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navMenu"
+        aria-controls="navMenu"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+        <span class="toggler-icon"></span>
+      </button>
+
+      <!-- Nav Links -->
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto align-items-lg-center gap-lg-1">
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#menu">Menu & Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#why-us">Why Aurum</a></li>
+          <li class="nav-item"><a class="nav-link" href="#testimonials">Testimonials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+          <li class="nav-item ms-lg-3">
+            <a class="btn btn-reserve" href="#cta">Reserve a Table</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- ============================================================
+       HERO SECTION
+  ============================================================ -->
+  <section id="hero" class="hero-section" aria-label="Hero">
+    <!-- Parallax background handled via JS -->
+    <div class="hero-bg" aria-hidden="true"></div>
+    <!-- Gold radial glow overlay -->
+    <div class="hero-glow" aria-hidden="true"></div>
+    <!-- Dark overlay -->
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content text-center">
+      <!-- Eyebrow label -->
+      <p class="hero-eyebrow reveal-fade">Est. 2018 · London</p>
+
+      <!-- Signature display headline split by gold rule -->
+      <div class="hero-title-wrap reveal-fade" style="--delay: 0.15s">
+        <h1 class="hero-title">AURUM</h1>
+        <div class="hero-rule" aria-hidden="true"><span></span></div>
+      </div>
+
+      <p class="hero-tagline reveal-fade" style="--delay: 0.3s">
+        Where every course is a <em>conversation</em><br class="d-none d-md-block" /> between season and craft.
+      </p>
+
+      <div class="hero-ctas reveal-fade d-flex flex-column flex-sm-row justify-content-center gap-3" style="--delay: 0.45s">
+        <a href="#cta" class="btn btn-gold">Reserve Your Table</a>
+        <a href="#menu" class="btn btn-ghost">Explore the Menu</a>
+      </div>
+
+      <!-- Scroll indicator -->
+      <div class="scroll-indicator" aria-hidden="true">
+        <span></span>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       ABOUT SECTION
+  ============================================================ -->
+  <section id="about" class="section-light py-section" aria-labelledby="about-heading">
+    <div class="container">
+      <div class="row align-items-center g-5">
+
+        <!-- Image block -->
+        <div class="col-lg-5 reveal-left">
+          <div class="about-img-wrap">
+            <img
+              src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=800&q=80"
+              alt="Aurum's intimate dining room with candlelit tables"
+              class="img-fluid about-main-img"
+              loading="lazy"
+            />
+            <!-- Floating accent card -->
+            <div class="about-accent-card">
+              <p class="accent-number">18<span>+</span></p>
+              <p class="accent-label">Years of<br/>Culinary Excellence</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Text block -->
+        <div class="col-lg-6 offset-lg-1 reveal-right">
+          <p class="section-eyebrow">Our Story</p>
+          <h2 id="about-heading" class="section-heading-dark">
+            Born from a passion<br /><em>for the extraordinary</em>
+          </h2>
+          <p class="body-text mt-4">
+            Aurum was conceived in 2018 by Executive Chef Isabelle Renard — a vision to dissolve the boundary between restaurant and theatre. Nestled in the heart of Mayfair, our 42-seat dining room offers an unhurried world where seasonal ingredients sourced from trusted British farms meet the refinement of classical French technique.
+          </p>
+          <p class="body-text mt-3">
+            Every detail — from the hand-thrown ceramics to the curated wine cellar of over 600 labels — is chosen to compose a single, coherent experience. One that stays with you long after the last course.
+          </p>
+          <div class="about-stats d-flex gap-5 mt-5">
+            <div class="stat-item">
+              <p class="stat-number">3</p>
+              <p class="stat-label">Michelin Stars</p>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <p class="stat-number">42</p>
+              <p class="stat-label">Intimate Seats</p>
+            </div>
+            <div class="stat-divider" aria-hidden="true"></div>
+            <div class="stat-item">
+              <p class="stat-number">600<span>+</span></p>
+              <p class="stat-label">Wine Labels</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       SERVICES / MENU SECTION
+  ============================================================ -->
+  <section id="menu" class="section-dark py-section" aria-labelledby="services-heading">
+    <div class="container">
+
+      <div class="text-center mb-section reveal-fade">
+        <p class="section-eyebrow-light">Dining Experiences</p>
+        <h2 id="services-heading" class="section-heading-light">
+          Crafted for every<br /><em>occasion</em>
+        </h2>
+      </div>
+
+      <div class="row g-4 justify-content-center">
+
+        <!-- Service Card 1 -->
+        <div class="col-md-6 col-lg-4 reveal-fade" style="--delay: 0s">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1600891964599-f61ba0e24092?w=600&q=80"
+                alt="The Tasting Menu at Aurum"
+                loading="lazy"
+              />
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Signature</span>
+              <h3 class="service-title">The Tasting Menu</h3>
+              <p class="service-desc">An eight-course journey through the season. Each dish a study in restraint and precision, paired with wines chosen by our sommelier.</p>
+              <div class="service-footer">
+                <span class="service-price">From £145 <small>per person</small></span>
+                <a href="#cta" class="service-link" aria-label="Reserve the Tasting Menu">Reserve <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 2 -->
+        <div class="col-md-6 col-lg-4 reveal-fade" style="--delay: 0.1s">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1559339352-11d035aa65de?w=600&q=80"
+                alt="À la carte dining at Aurum"
+                loading="lazy"
+              />
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-tag">À la Carte</span>
+              <h3 class="service-title">Evening Dining</h3>
+              <p class="service-desc">Freedom to compose your own experience from our rotating seasonal menu, guided by the kitchen's best of the day.</p>
+              <div class="service-footer">
+                <span class="service-price">From £75 <small>per person</small></span>
+                <a href="#cta" class="service-link" aria-label="Reserve Evening Dining">Reserve <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 3 -->
+        <div class="col-md-6 col-lg-4 reveal-fade" style="--delay: 0.2s">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1544025162-d76694265947?w=600&q=80"
+                alt="Private dining room at Aurum"
+                loading="lazy"
+              />
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Exclusive</span>
+              <h3 class="service-title">Private Dining</h3>
+              <p class="service-desc">Our intimate private room seats up to 14 guests. Bespoke menus, dedicated staff, and a custom wine selection for your event.</p>
+              <div class="service-footer">
+                <span class="service-price">From £2,200 <small>room hire</small></span>
+                <a href="#contact" class="service-link" aria-label="Enquire about Private Dining">Enquire <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 4 -->
+        <div class="col-md-6 col-lg-4 reveal-fade" style="--delay: 0.3s">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1560717845-968823efbee1?w=600&q=80"
+                alt="Brunch at Aurum"
+                loading="lazy"
+              />
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Weekend</span>
+              <h3 class="service-title">Saturday Brunch</h3>
+              <p class="service-desc">A leisurely brunch menu from 11am to 2pm, featuring signature pastries, small plates, and our celebrated Bloody Aurum cocktail.</p>
+              <div class="service-footer">
+                <span class="service-price">From £55 <small>per person</small></span>
+                <a href="#cta" class="service-link" aria-label="Reserve Saturday Brunch">Reserve <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 5 -->
+        <div class="col-md-6 col-lg-4 reveal-fade" style="--delay: 0.4s">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1551882547-ff40c4a49ce4?w=600&q=80"
+                alt="Chef's table experience"
+                loading="lazy"
+              />
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Immersive</span>
+              <h3 class="service-title">Chef's Table</h3>
+              <p class="service-desc">Six seats within sight of the kitchen. Watch the brigade at work and enjoy a personalised narration of every dish from Chef Renard herself.</p>
+              <div class="service-footer">
+                <span class="service-price">From £220 <small>per person</small></span>
+                <a href="#cta" class="service-link" aria-label="Reserve the Chef's Table">Reserve <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Service Card 6 -->
+        <div class="col-md-6 col-lg-4 reveal-fade" style="--delay: 0.5s">
+          <div class="service-card">
+            <div class="service-img-wrap">
+              <img
+                src="https://images.unsplash.com/photo-1510812431401-41d2bd2722f3?w=600&q=80"
+                alt="Aurum wine cellar tasting"
+                loading="lazy"
+              />
+              <div class="service-img-overlay"></div>
+            </div>
+            <div class="service-body">
+              <span class="service-tag">Cellar</span>
+              <h3 class="service-title">Wine & Cellar Tours</h3>
+              <p class="service-desc">Descend into our 600-label cellar with Head Sommelier Marc Dubois for a curated tasting of rare and aged bottles.</p>
+              <div class="service-footer">
+                <span class="service-price">From £180 <small>per person</small></span>
+                <a href="#contact" class="service-link" aria-label="Enquire about Cellar Tours">Enquire <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       WHY CHOOSE US SECTION
+  ============================================================ -->
+  <section id="why-us" class="section-light py-section" aria-labelledby="why-heading">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+
+        <!-- Text side -->
+        <div class="col-lg-5 reveal-left">
+          <p class="section-eyebrow">Why Aurum</p>
+          <h2 id="why-heading" class="section-heading-dark">
+            The difference is in<br /><em>the details</em>
+          </h2>
+          <p class="body-text mt-4">
+            We measure success not by covers turned, but by conversations remembered. Every element of the Aurum experience is designed to disappear — so all that remains is the pleasure of your table.
+          </p>
+          <a href="#cta" class="btn btn-dark-outline mt-4">Book an Experience</a>
+        </div>
+
+        <!-- Features grid -->
+        <div class="col-lg-6 offset-lg-1 reveal-right">
+          <div class="row g-4">
+
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="why-icon" aria-hidden="true"><i class="bi bi-award"></i></div>
+                <h3 class="why-title">3 Michelin Stars</h3>
+                <p class="why-desc">Recognised as one of Britain's top five restaurants in the 2024 Michelin Great Britain & Ireland guide.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="why-icon" aria-hidden="true"><i class="bi bi-tree"></i></div>
+                <h3 class="why-title">Seasonal & Local</h3>
+                <p class="why-desc">Our menu changes with the harvest. 90% of ingredients are sourced from within 100 miles of London.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="why-icon" aria-hidden="true"><i class="bi bi-person-heart"></i></div>
+                <h3 class="why-title">Bespoke Service</h3>
+                <p class="why-desc">A 1:1 staff-to-guest ratio ensures every visit is unhurried, attentive, and effortlessly personal.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="why-icon" aria-hidden="true"><i class="bi bi-globe"></i></div>
+                <h3 class="why-title">600+ Wine Labels</h3>
+                <p class="why-desc">From Burgundy's greatest premiers to emerging Georgian naturals — a cellar built over two decades.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="why-icon" aria-hidden="true"><i class="bi bi-heart"></i></div>
+                <h3 class="why-title">Dietary Mastery</h3>
+                <p class="why-desc">Every dietary requirement is treated not as a constraint but as a creative brief. No guest is an afterthought.</p>
+              </div>
+            </div>
+
+            <div class="col-sm-6">
+              <div class="why-card">
+                <div class="why-icon" aria-hidden="true"><i class="bi bi-lock"></i></div>
+                <h3 class="why-title">Private & Discreet</h3>
+                <p class="why-desc">Favoured by diplomats, creatives, and business leaders who require an environment of complete discretion.</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       TESTIMONIALS SECTION
+  ============================================================ -->
+  <section id="testimonials" class="section-stone py-section" aria-labelledby="testimonials-heading">
+    <div class="container">
+
+      <div class="text-center mb-section reveal-fade">
+        <p class="section-eyebrow-light">Guest Voices</p>
+        <h2 id="testimonials-heading" class="section-heading-light">
+          Heard around<br /><em>the table</em>
+        </h2>
+      </div>
+
+      <!-- Testimonials carousel -->
+      <div id="testimonialCarousel" class="carousel slide reveal-fade" data-bs-ride="carousel" data-bs-interval="6000" style="--delay: 0.2s">
+
+        <div class="carousel-inner">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <blockquote class="testimonial-card">
+                  <div class="quote-mark" aria-hidden="true">"</div>
+                  <p class="testimonial-text">Aurum is not a restaurant — it is a philosophy made edible. Chef Renard's smoked celeriac with truffle emulsion was the finest thing I have eaten in fifteen years of reviewing. Book immediately, and do not be late.</p>
+                  <footer class="testimonial-footer">
+                    <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=80&h=80&fit=crop&crop=face&q=80" alt="Portrait of James Whitmore" class="testimonial-avatar" loading="lazy" />
+                    <div>
+                      <cite class="testimonial-name">James Whitmore</cite>
+                      <p class="testimonial-role">Food Critic, The Observer</p>
+                    </div>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <blockquote class="testimonial-card">
+                  <div class="quote-mark" aria-hidden="true">"</div>
+                  <p class="testimonial-text">We hosted our anniversary dinner in Aurum's private room. The team remembered my wife's allergy from our first visit two years prior — without being told. That kind of invisible care is extraordinary. We will return every year.</p>
+                  <footer class="testimonial-footer">
+                    <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=80&h=80&fit=crop&crop=face&q=80" alt="Portrait of Oliver Chen" class="testimonial-avatar" loading="lazy" />
+                    <div>
+                      <cite class="testimonial-name">Oliver Chen</cite>
+                      <p class="testimonial-role">Senior Partner, Meridian Capital</p>
+                    </div>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 3 -->
+          <div class="carousel-item">
+            <div class="row justify-content-center">
+              <div class="col-lg-8">
+                <blockquote class="testimonial-card">
+                  <div class="quote-mark" aria-hidden="true">"</div>
+                  <p class="testimonial-text">The Chef's Table experience is unlike anything I have encountered in 30 cities. Watching the brigade with such quiet intensity, and then hearing Isabelle explain the provenance of each element — it is part meal, part masterclass. Unmissable.</p>
+                  <footer class="testimonial-footer">
+                    <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=80&h=80&fit=crop&crop=face&q=80" alt="Portrait of Sophia Laurent" class="testimonial-avatar" loading="lazy" />
+                    <div>
+                      <cite class="testimonial-name">Sophia Laurent</cite>
+                      <p class="testimonial-role">Travel Editor, Condé Nast Traveller</p>
+                    </div>
+                  </footer>
+                </blockquote>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Carousel Controls -->
+        <div class="carousel-controls d-flex justify-content-center align-items-center gap-3 mt-5">
+          <button class="carousel-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev" aria-label="Previous testimonial">
+            <i class="bi bi-arrow-left" aria-hidden="true"></i>
+          </button>
+          <div class="carousel-indicators-custom">
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="dot active" aria-current="true" aria-label="Testimonial 1"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" class="dot" aria-label="Testimonial 2"></button>
+            <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" class="dot" aria-label="Testimonial 3"></button>
+          </div>
+          <button class="carousel-btn" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next" aria-label="Next testimonial">
+            <i class="bi bi-arrow-right" aria-hidden="true"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FAQ SECTION
+  ============================================================ -->
+  <section id="faq" class="section-light py-section" aria-labelledby="faq-heading">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+
+          <div class="text-center mb-section reveal-fade">
+            <p class="section-eyebrow">Before You Arrive</p>
+            <h2 id="faq-heading" class="section-heading-dark">
+              Frequently asked<br /><em>questions</em>
+            </h2>
+          </div>
+
+          <div class="accordion aurum-accordion reveal-fade" id="faqAccordion" style="--delay: 0.15s">
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1" aria-expanded="true" aria-controls="faq1">
+                  How far in advance should I book?
+                </button>
+              </h3>
+              <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Demand for Aurum is high, particularly on Friday and Saturday evenings. We recommend reserving your table at least six to eight weeks in advance for weekend dining, and two to three weeks for weeknights. The Chef's Table and Private Dining Room should be booked a minimum of four weeks ahead.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2" aria-expanded="false" aria-controls="faq2">
+                  What is the dress code?
+                </button>
+              </h3>
+              <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We invite guests to dress elegantly. Smart attire is requested — jackets for gentlemen are welcomed but not mandatory. We simply ask that trainers, sportswear, and casual shorts are not worn in the dining room, so that all guests feel the occasion is respected.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3" aria-expanded="false" aria-controls="faq3">
+                  Can you accommodate dietary requirements?
+                </button>
+              </h3>
+              <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Absolutely. Our kitchen is proud of its ability to accommodate any dietary requirement — vegetarian, vegan, coeliac, and all allergen-related needs — without compromise to the quality or creativity of the experience. Please inform us at time of booking so that we may prepare accordingly.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq4" aria-expanded="false" aria-controls="faq4">
+                  Is there a cancellation policy?
+                </button>
+              </h3>
+              <div id="faq4" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We ask for 48 hours' notice for any cancellation or amendment. Reservations cancelled within 48 hours are subject to a £50 per person fee. For private dining and Chef's Table bookings, a 72-hour notice period applies. We understand that plans change; please do contact us as early as possible.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq5" aria-expanded="false" aria-controls="faq5">
+                  Do you offer gift experiences?
+                </button>
+              </h3>
+              <div id="faq5" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. Aurum gift experiences are available for any of our dining formats and can be presented in our hand-crafted gift envelope. They make a considered and memorable gift for birthdays, anniversaries, or any occasion that deserves something beyond ordinary. Please contact our reservations team for details.
+                </div>
+              </div>
+            </div>
+
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq6" aria-expanded="false" aria-controls="faq6">
+                  Where are you located and is parking available?
+                </button>
+              </h3>
+              <div id="faq6" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Aurum is located at 14 Charles Street, Mayfair, London W1J 5DU, a short walk from Green Park Underground station. We have a partnership with a nearby private parking facility; our reservations team can arrange a parking space upon request. We also recommend our preferred taxi and car service, Meridian, for a seamless arrival.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CALL TO ACTION SECTION
+  ============================================================ -->
+  <section id="cta" class="cta-section" aria-labelledby="cta-heading">
+    <div class="cta-bg" aria-hidden="true"></div>
+    <div class="cta-overlay" aria-hidden="true"></div>
+    <div class="container position-relative">
+      <div class="row justify-content-center text-center">
+        <div class="col-lg-7 reveal-fade">
+          <p class="section-eyebrow-light">Reservations</p>
+          <h2 id="cta-heading" class="cta-heading">
+            Your table<br /><em>awaits</em>
+          </h2>
+          <p class="cta-body">
+            Reserve online, or call our reservations team on<br />
+            <a href="tel:+442071234567" class="cta-phone" aria-label="Call Aurum reservations">+44 (0)20 7123 4567</a>
+          </p>
+          <form class="cta-form" aria-label="Quick reservation form" novalidate>
+            <div class="row g-3 justify-content-center">
+              <div class="col-sm-6 col-lg-4">
+                <label for="cta-date" class="visually-hidden">Preferred date</label>
+                <input type="date" id="cta-date" class="form-control cta-input" placeholder="Preferred Date" aria-label="Preferred date" required />
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <label for="cta-guests" class="visually-hidden">Number of guests</label>
+                <select id="cta-guests" class="form-select cta-input" aria-label="Number of guests" required>
+                  <option value="" disabled selected>Guests</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                  <option>5</option>
+                  <option>6+</option>
+                </select>
+              </div>
+              <div class="col-sm-6 col-lg-3">
+                <label for="cta-time" class="visually-hidden">Preferred sitting</label>
+                <select id="cta-time" class="form-select cta-input" aria-label="Preferred sitting" required>
+                  <option value="" disabled selected>Sitting</option>
+                  <option>Early (6:00 – 7:30 PM)</option>
+                  <option>Main (7:30 – 9:00 PM)</option>
+                  <option>Late (9:00 – 10:30 PM)</option>
+                </select>
+              </div>
+              <div class="col-sm-6 col-lg-2">
+                <button type="submit" class="btn btn-gold w-100">Check</button>
+              </div>
+            </div>
+            <p class="cta-note mt-3">Or call us to discuss special occasions, dietary requirements, and private dining enquiries.</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       CONTACT SECTION
+  ============================================================ -->
+  <section id="contact" class="section-light py-section" aria-labelledby="contact-heading">
+    <div class="container">
+      <div class="row g-5">
+
+        <!-- Contact Info -->
+        <div class="col-lg-5 reveal-left">
+          <p class="section-eyebrow">Find Us</p>
+          <h2 id="contact-heading" class="section-heading-dark">
+            Get in<br /><em>touch</em>
+          </h2>
+
+          <ul class="contact-list mt-5" aria-label="Contact information">
+            <li>
+              <div class="contact-icon" aria-hidden="true"><i class="bi bi-geo-alt"></i></div>
+              <div>
+                <p class="contact-label">Address</p>
+                <p class="contact-value">14 Charles Street, Mayfair<br />London W1J 5DU</p>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon" aria-hidden="true"><i class="bi bi-telephone"></i></div>
+              <div>
+                <p class="contact-label">Reservations</p>
+                <a href="tel:+442071234567" class="contact-value contact-link">+44 (0)20 7123 4567</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon" aria-hidden="true"><i class="bi bi-envelope"></i></div>
+              <div>
+                <p class="contact-label">Email</p>
+                <a href="mailto:reservations@aurum-london.com" class="contact-value contact-link">reservations@aurum-london.com</a>
+              </div>
+            </li>
+            <li>
+              <div class="contact-icon" aria-hidden="true"><i class="bi bi-clock"></i></div>
+              <div>
+                <p class="contact-label">Opening Hours</p>
+                <p class="contact-value">
+                  Tuesday – Friday: 6:00 PM – 11:00 PM<br />
+                  Saturday: 11:00 AM – 3:00 PM · 6:00 PM – 11:00 PM<br />
+                  Sunday – Monday: Closed
+                </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="col-lg-6 offset-lg-1 reveal-right">
+          <form class="contact-form" aria-label="Enquiry form" novalidate id="contactForm">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="c-name" class="form-label">Full Name <span aria-hidden="true">*</span></label>
+                <input type="text" id="c-name" class="form-control aurum-input" placeholder="Your name" required autocomplete="name" />
+              </div>
+              <div class="col-sm-6">
+                <label for="c-email" class="form-label">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="c-email" class="form-control aurum-input" placeholder="your@email.com" required autocomplete="email" />
+              </div>
+              <div class="col-12">
+                <label for="c-phone" class="form-label">Phone Number</label>
+                <input type="tel" id="c-phone" class="form-control aurum-input" placeholder="+44 (0)..." autocomplete="tel" />
+              </div>
+              <div class="col-12">
+                <label for="c-subject" class="form-label">Subject <span aria-hidden="true">*</span></label>
+                <select id="c-subject" class="form-select aurum-input" required>
+                  <option value="" disabled selected>Select a subject</option>
+                  <option>General Reservation</option>
+                  <option>Private Dining Enquiry</option>
+                  <option>Chef's Table Booking</option>
+                  <option>Corporate Events</option>
+                  <option>Gift Experiences</option>
+                  <option>Other</option>
+                </select>
+              </div>
+              <div class="col-12">
+                <label for="c-message" class="form-label">Message <span aria-hidden="true">*</span></label>
+                <textarea id="c-message" class="form-control aurum-input" rows="5" placeholder="How may we assist you?" required></textarea>
+              </div>
+              <div class="col-12">
+                <button type="submit" class="btn btn-gold-dark w-100">Send Enquiry <i class="bi bi-send ms-2" aria-hidden="true"></i></button>
+              </div>
+            </div>
+            <!-- Success message (hidden by default) -->
+            <div class="form-success mt-3" id="formSuccess" role="status" aria-live="polite" hidden>
+              <i class="bi bi-check-circle me-2" aria-hidden="true"></i>Thank you — we will be in touch within 24 hours.
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ============================================================
+       FOOTER
+  ============================================================ -->
+  <footer class="aurum-footer" role="contentinfo">
+    <div class="container">
+      <div class="row g-5 footer-top">
+
+        <!-- Brand column -->
+        <div class="col-lg-4">
+          <a href="#hero" class="footer-brand" aria-label="Aurum – back to top">
+            <span class="brand-a">A</span><span class="brand-urum">URUM</span>
+          </a>
+          <p class="footer-desc">Fine dining in the heart of Mayfair. Three Michelin stars. An experience composed with intention.</p>
+          <div class="footer-social d-flex gap-3 mt-4">
+            <a href="#" class="social-link" aria-label="Aurum on Instagram"><i class="bi bi-instagram" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="Aurum on Facebook"><i class="bi bi-facebook" aria-hidden="true"></i></a>
+            <a href="#" class="social-link" aria-label="Aurum on Twitter / X"><i class="bi bi-twitter-x" aria-hidden="true"></i></a>
+          </div>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="col-sm-6 col-lg-2 offset-lg-1">
+          <h3 class="footer-col-title">Navigate</h3>
+          <ul class="footer-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu & Services</a></li>
+            <li><a href="#why-us">Why Aurum</a></li>
+            <li><a href="#testimonials">Testimonials</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+
+        <!-- Experiences -->
+        <div class="col-sm-6 col-lg-2">
+          <h3 class="footer-col-title">Experiences</h3>
+          <ul class="footer-links">
+            <li><a href="#menu">Tasting Menu</a></li>
+            <li><a href="#menu">Evening Dining</a></li>
+            <li><a href="#menu">Private Dining</a></li>
+            <li><a href="#menu">Chef's Table</a></li>
+            <li><a href="#menu">Saturday Brunch</a></li>
+            <li><a href="#menu">Cellar Tours</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact mini -->
+        <div class="col-lg-3">
+          <h3 class="footer-col-title">Visit Us</h3>
+          <address class="footer-address">
+            14 Charles Street<br />
+            Mayfair, London W1J 5DU<br /><br />
+            <a href="tel:+442071234567">+44 (0)20 7123 4567</a><br />
+            <a href="mailto:reservations@aurum-london.com">reservations@aurum-london.com</a>
+          </address>
+          <p class="footer-hours mt-3">
+            Tue – Fri: 6pm – 11pm<br />
+            Sat: 11am – 3pm &amp; 6pm – 11pm
+          </p>
+        </div>
+
+      </div>
+
+      <!-- Footer bottom bar -->
+      <div class="footer-bottom d-flex flex-column flex-md-row justify-content-between align-items-center gap-2">
+        <p class="footer-copy">© <span id="year"></span> Aurum Restaurant Ltd. All rights reserved.</p>
+        <div class="footer-legal d-flex gap-4">
+          <a href="#">Privacy Policy</a>
+          <a href="#">Terms & Conditions</a>
+          <a href="#">Accessibility</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top button -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top" title="Back to top">
+    <i class="bi bi-chevron-up" aria-hidden="true"></i>
+  </button>
+
+
+  <!-- Bootstrap 5 JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Custom Script -->
+  <script src="script.js"></script>
+</body>
+</html>
